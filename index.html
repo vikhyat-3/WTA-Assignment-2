@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(15, 15, 64);
+        }
+        #first{
+            margin-left: 15%;
+            margin-right: 15%;
+            background-color: rgb(243, 152, 77);
+            color: rgb(0, 0, 0);
+            max-width: 70%;
+            align-items: center;
+        }
+        #navigation{
+            width: 100%;
+        }
+        #desc,#photos,#review{
+            margin-left: 15%;
+            margin-right: 15%;
+            width: 70%;
+            background-color: white;
+            color:black;
+            padding-left: 1.5rem;
+        }
+        hr{
+            margin: 0;
+            background-color: rgb(79, 75, 75);
+            margin-left: 0.1em;
+            margin-right: 0.3em;
+        }
+        figcaption{
+            color: rgb(69, 54, 54);
+        }
+        footer{
+            color: black;
+            background-color: rgb(243, 152, 77);
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        #contact{
+            background-color: rgb(154, 165, 75);
+            border-radius: .3em;
+            width: 68%;
+            color: black;
+        }
+        .twitter{
+            margin-left:2em
+        }
+        .col{
+            padding: 0%!important;
+            width:auto;
+        }
+        .row{
+            width:75%;
+        }
+        .table{
+            width: 90%;
+            margin:0%;
+            padding-left: 1em;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        #rev1,#rev2{
+            margin-top: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="first">
+            <h1 style="padding-left: 1.5rem;">Share your travels</h1>
+            <h5 style="padding-left: 1.5rem;">Let us know where you have been</h5>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark " id="navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div>
+                <div class="navbar-nav" align="right" >
+                    <a class="nav-item nav-link" href="#history_start" id="history_button">Description</a>
+                    <a class="nav-item nav-link" href="#chess_pieces" id="pieces">Related Photos</a>
+                    <a class="nav-item nav-link" href="#players-table" id="players">Reviews</a>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <container id="second">
+        <div id="desc">
+            Description
+            <hr>
+            <p style="color:gray"><i>Photo by Randy Connolly</i></p>
+            This photo of Dal Lake in Jammu and Kashmir was taken on June 22,2012 with a Canon EOS 30D camera.
+            <figure>
+                <img src="dal.jpg" width="70%">
+                <figcaption>Dal Lake, Srinagar</figcaption>
+            </figure>
+            <div id="contact" class="social text-gray" style="color:black">    
+                <u><i class="fa fa-share-alt" style="margin-top: 0.4em;"></i> Share</u>
+                <a href="https://www.twitter.com" class='twitter'><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" class='linkedin'><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" class='Facebook'><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com" class='Youtube'><i class="fa fa-youtube"></i></a>
+            </div>
+            <br>
+        </div>
+        <div id="photos">
+            <br>
+            Related Photos
+            <hr>
+            <br>
+            <div class="table">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="dal2.jpg" style="width: 90%;">
+                    </div>
+                    <div class="col-4">
+                        <img src="download.jpg" style="width: 90%;height: 92%;">
+                    </div>
+                    <div class="col-4">
+                        <img src="download (1).jpg" style="width: 90%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="review">
+            <br>
+            Reviews
+            <hr>
+            <div id="rev1">
+                <p style="color:gray"><i>By Ricardo on September 15,2022</i></p>
+                Easy on the HDR Buddy!
+            </div>
+            <hr>
+            <div id="rev2">
+                <p style="color:gray"><i>By Susan on October 2,2022</i></p>
+                Amazing pics Randy!
+            </div>
+            <br>
+        </div>
+    </container>
+    <br>
+    <footer id="footer">
+        <div class="copyright" align="center">
+          Copyrights <strong>&copy;</strong> 2022 Share your travels. All Rights Reserved.
+        </div>
+    </footer>
+    <br>
+</body>
+</html>
